@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1354",
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "cover": "https://imgv2-2-f.scribdassets.com/img/word_document/338240944/original/82f08c539c/1587828916?v=1",
+    "price": 10
+  },
+  {
+    "id": "2178",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "year": 1954,
+    "cover": "https://imgv2-2-f.scribdassets.com/img/word_document/338240944/original/82f08c539c/1587828916?v=1",
+    "price": 16
+  },
+  {
+    "id": "6957",
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "year": 2003,
+    "cover": "https://imgv2-2-f.scribdassets.com/img/word_document/338240944/original/82f08c539c/1587828916?v=1",
+    "price": 22
+  },
+  {
+    "id": "3246",
+    "title": "Harry Potter and the Philosopher’s Stone",
+    "author": "J.K. Rowling",
+    "year": 1997,
+    "cover": "https://image.tmdb.org/t/p/original/mavk9xclj6e5hFFk7I0ZNLo4nVD.jpg",
+    "price": 14
+  },
+  {
+    "id": "4329",
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "year": 1969,
+    "cover": "https://th.bing.com/th/id/OIP.QgX77uGabSoJBQKjPaxrNQHaKR?pid=ImgDet&rs=1",
+    "price": 15
+  },
+  {
+    "id": "4526",
+    "title": "The Lion, the Witch, and the Wardrobe",
+    "author": "C.S. Lewis",
+    "year": 1950,
+    "cover": "https://images.thenile.io/r1000/9780007588527.jpg",
+    "price": 8
+  },
+  {
+    "id": "2975",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": 1960,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9781785151552.jpg",
+    "price": 25
+  },
+  {
+    "id": "4564",
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "year": 2005,
+    "cover": "https://images-na.ssl-images-amazon.com/images/I/9123eop9gIL.jpg",
+    "price": 9
+  },
+  {
+    "id": "3459",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "year": 2011,
+    "cover": "https://d30a6s96kk7rhm.cloudfront.net/original/readings/978/009/959/9780099590088.jpg",
+    "price": 13
+  },
+  {
+    "id": "9543",
+    "title": "Long Walk to Freedom",
+    "author": "Nelson Mandela",
+    "year": 1994,
+    "cover": "https://th.bing.com/th/id/OIP.3D-QmjSPanUfxAVfgfCQ_gHaLB?pid=ImgDet&rs=1",
+    "price": 24
+  }
+]
