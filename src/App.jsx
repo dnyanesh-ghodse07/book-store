@@ -1,40 +1,19 @@
-import { useEffect, useState } from "react";
 import "./App.css";
-import fakeApi from "./data/fakeApi";
-import BookCard from "./components/BookCard/BookCard";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Authors from "./pages/Authors/Authors";
+import Books from "./pages/Books/Books";
+import Navbar from "./components/NavBar/Navbar";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [books, setBooks] = useState([]);
-
-  async function getBooks() {
-    try {
-      setLoading(true);
-      const data = await fakeApi;
-      setBooks(data);
-      setLoading(false);
-    } catch (err) {
-      setError(err);
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  useEffect(() => {
-    getBooks();
-  }, []);
-
   return (
     <>
-      <h1>Book store</h1>
-      {loading && <>Loading...</>}
-      {error && <>Error</>}
-      <div className="books">
-        {books.map((book) => {
-          return <BookCard key={book.id} book={book} />;
-        })}
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="authors" element={<Authors />}></Route>
+        <Route path="books" element={<Books />}></Route>
+      </Routes>
     </>
   );
 }
