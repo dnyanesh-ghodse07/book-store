@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import fakeApi from "./data/fakeApi";
+import BookCard from "./components/BookCard/BookCard";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,9 +30,11 @@ function App() {
       <h1>Book store</h1>
       {loading && <>Loading...</>}
       {error && <>Error</>}
-      {books.map((book) => {
-        return <p key={book.id}>{book.title}</p>;
-      })}
+      <div className="books">
+        {books.map((book) => {
+          return <BookCard key={book.id} book={book} />;
+        })}
+      </div>
     </>
   );
 }
