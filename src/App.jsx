@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import Authors from "./pages/Authors/Authors";
 import BookDetails from "./pages/BookDetails/BookDetails";
 import Books from "./pages/Books/Books";
-import Navbar from "./components/NavBar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Cart from "./pages/Cart/Cart";
 import AuthorDetails from "./pages/AuthorDetails/AuthorDetails";
 import Login from "./pages/Login/Login";
