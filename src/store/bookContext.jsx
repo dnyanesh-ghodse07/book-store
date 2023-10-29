@@ -8,6 +8,7 @@ const BooksContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [books, setBooks] = useState([]);
+  const [login, setLogin] = useState(false);
 
   async function getBooks() {
     try {
@@ -49,6 +50,8 @@ const BooksContextProvider = ({ children }) => {
         featuredBooks,
         getBookByAuthors,
         getBookById,
+        login,
+        setLogin,
       }}
     >
       {children}

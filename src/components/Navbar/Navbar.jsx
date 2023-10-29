@@ -1,8 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { useCart } from "../../store/CartContext";
+import { useContext } from "react";
+import { BooksContext } from "../../store/bookContext";
 const Navbar = () => {
   const { cartState } = useCart();
+  const navigate = useNavigate();
+  const { login, setLogin } = useContext(BooksContext);
+
+  const handleLogout = () => {
+    setLogin(false);
+    navigate("/");
+  };
 
   return (
     <div className={styles.navbar}>
@@ -29,6 +38,15 @@ const Navbar = () => {
             )}
           </NavLink>
         </li>
+        {!login ? (
+          <li>
+            <NavLink to="login">Login</NavLink>
+          </li>
+        ) : (
+          <button className={styles.logout} onClick={handleLogout}>
+            Logout
+          </button>
+        )}
       </ul>
     </div>
   );

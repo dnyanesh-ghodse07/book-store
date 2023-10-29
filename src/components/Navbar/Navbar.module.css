@@ -21,3 +21,15 @@ a {
   background-color: lightblue;
   padding: 5px;
 }
+
+.logout {
+  border: none;
+  background-color: #b28bf0c3;
+  padding: 4px;
+  color: #eee;
+}
+
+.logout:hover {
+  color: black;
+  cursor: pointer;
+}
