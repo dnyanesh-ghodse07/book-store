@@ -2,9 +2,11 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { BooksContext } from "../../store/bookContext";
 import styles from "./BookDetails.module.css";
+import { useCart } from "../../store/CartContext";
 
 const BookDetails = () => {
   const { id } = useParams();
+  const { handleAddToCart } = useCart();
   const { getBookById } = useContext(BooksContext);
 
   const book = getBookById(id)[0];
@@ -21,7 +23,7 @@ const BookDetails = () => {
             <h3 className={styles.bookAuthor}>{book?.author}</h3>
             <p className={styles.bookDesc}>{book?.bookDesc}</p>
           </div>
-          <button>Add to cart</button>
+          <button onClick={() => handleAddToCart(book)}>Add to cart</button>
         </div>
         {/* <p>{}</p> */}
       </div>

@@ -29,12 +29,14 @@ const BooksContextProvider = ({ children }) => {
   const featuredBooks = books.filter((book) => book.featured === true);
 
   function getBookByAuthors(author) {
+    console.log(author);
     const filteredBooks = books.filter((book) => book.author === author);
+    console.log(filteredBooks);
     return filteredBooks;
   }
 
   function getBookById(id) {
-    const filteredById = books.filter((book) => book.id === id);
+    const filteredById = books.filter((book) => book.id == id);
     return filteredById;
   }
 

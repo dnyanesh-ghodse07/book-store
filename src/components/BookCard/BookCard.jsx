@@ -4,7 +4,7 @@ import styles from "./BookCard.module.css";
 
 const BookCard = ({ book }) => {
   return (
-    <Link to={`/${book.id}`}>
+    <Link to={`/books/${book.id}`}>
       <div className={styles.book}>
         <div className={styles.bookCover}>
           <img src={book.cover} alt="" />

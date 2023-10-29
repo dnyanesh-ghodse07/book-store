@@ -5,3 +5,7 @@ a {
 .app {
   padding: 40px;
 }
+
+hr {
+  margin: 15px 0;
+}
