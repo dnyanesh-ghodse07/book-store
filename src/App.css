@@ -1,5 +1,7 @@
-.books {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+a {
+  text-decoration: none;
+}
+
+.app {
+  padding: 40px;
 }

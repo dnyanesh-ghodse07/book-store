@@ -6,6 +6,7 @@
     "authorImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/George_Orwell_press_photo.jpg/440px-George_Orwell_press_photo.jpg",
     "authorDesc": "Eric Arthur Blair (25 June 1903 – 21 January 1950), better known by his pen name George Orwell, was an English novelist, essayist, journalist, and critic.[1] His work is characterised by lucid prose, social criticism, opposition to totalitarianism, and support of democratic socialism.",
     "year": 1949,
+    "bookDesc": "Nineteen Eighty-Four (also published as 1984) is a dystopian novel and cautionary tale by English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, it centres on the consequences of totalitarianism, mass surveillance and repressive regimentation of people and behaviours within society.[2][3] Orwell, a democratic socialist, modelled the authoritarian state in the novel on the Soviet Union in the era of Stalinism, and Nazi Germany.[4] More broadly, the novel examines the role of truth and facts within societies and the ways in which they can be manipulated.",
     "cover": "https://imgv2-2-f.scribdassets.com/img/word_document/338240944/original/82f08c539c/1587828916?v=1",
     "price": 10,
     "featured": true
@@ -16,6 +17,7 @@
     "author": "J.R.R. Tolkien",
     "authorDesc": "John Ronald Reuel Tolkien CBE FRSL (/ˈruːl ˈtɒlkiːn/, ROOL TOL-keen;[a] 3 January 1892 – 2 September 1973) was an English writer and philologist. He was the author of the high fantasy works The Hobbit and The Lord of the Rings.",
     "authorImg": "https://thefilmstage.com/wp-content/uploads/2011/08/tolkien.jpg",
+    "bookDesc": "",
     "year": 1954,
     "cover": "https://media.s-bol.com/Bz82AVA058k/801x1200.jpg",
     "price": 16,

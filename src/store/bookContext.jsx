@@ -33,9 +33,21 @@ const BooksContextProvider = ({ children }) => {
     return filteredBooks;
   }
 
+  function getBookById(id) {
+    const filteredById = books.filter((book) => book.id === id);
+    return filteredById;
+  }
+
   return (
     <BooksContext.Provider
-      value={{ loading, error, books, featuredBooks, getBookByAuthors }}
+      value={{
+        loading,
+        error,
+        books,
+        featuredBooks,
+        getBookByAuthors,
+        getBookById,
+      }}
     >
       {children}
     </BooksContext.Provider>

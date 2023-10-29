@@ -1,4 +1,4 @@
-import "./Home.css";
+import styles from "./Home.module.css";
 import BookCard from "../../components/BookCard/BookCard";
 
 import { BooksContext } from "../../store/bookContext";
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       {loading && <>Loading...</>}
       {error && <>Error</>}
-      <div className="books">
+      <div className={styles.books}>
         {featuredBooks?.map((book) => {
           return <BookCard key={book.id} book={book} />;
         })}

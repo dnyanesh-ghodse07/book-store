@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import "./Author.css";
+import styles from "./Author.module.css";
 
 const Author = ({ book }) => {
   return (
-    <div className="author">
+    <div className={styles.author}>
       <img src={book.authorImg} alt="" />
       <div>
         <h2>{book.author}</h2>

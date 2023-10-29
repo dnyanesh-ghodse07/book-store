@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 }
 
-.navbar .nav-links {
+.navbar .navLinks {
   display: flex;
   gap: 20px;
   list-style-type: none;
@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-.nav-links .active {
+.navLinks .active {
   background-color: lightblue;
   padding: 5px;
 }

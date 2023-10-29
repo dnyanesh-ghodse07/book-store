@@ -1,0 +1,5 @@
+.authorList {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+}
