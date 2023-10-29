@@ -8,6 +8,9 @@ const Home = () => {
 
   return (
     <div>
+      <div className={styles.welcome}>
+        <h1>Welcome To BookStore 📚</h1>
+      </div>
       {loading && <>Loading...</>}
       {error && <>Error</>}
       <div className={styles.books}>
