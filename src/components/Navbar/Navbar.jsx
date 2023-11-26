@@ -1,53 +1,39 @@
-import { NavLink, useNavigate } from "react-router-dom";
-import styles from "./Navbar.module.css";
-import { useCart } from "../../store/CartContext";
-import { useContext } from "react";
-import { BooksContext } from "../../store/bookContext";
+import NavButton from "../NavButton/NavButton";
 const Navbar = () => {
-  const { cartState } = useCart();
-  const navigate = useNavigate();
-  const { login, setLogin } = useContext(BooksContext);
-
-  const handleLogout = () => {
-    setLogin(false);
-    navigate("/");
-  };
+  const routes = [
+    {
+      title: "Home",
+      icon: "",
+      path: "/",
+    },
+    {
+      title: "Books",
+      icon: "",
+      path: "books",
+    },
+    {
+      title: "Authors",
+      icon: "",
+      path: "authors",
+    },
+    {
+      title: "Cart",
+      icon: "",
+      path: "cart",
+    },
+  ];
 
   return (
-    <div className={styles.navbar}>
-      <h1 className={styles.logo}>Book Store 📖</h1>
-      <ul className={styles.navLinks}>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="books">Books</NavLink>
-        </li>
-        <li>
-          <NavLink to="authors">Authors</NavLink>
-        </li>
-        <li>
-          <NavLink to="cart">
-            Cart{" "}
-            {cartState.cart.length > 0 ? (
-              <span style={{ background: "lightgreen", padding: "4px" }}>
-                {cartState.cart.length}
-              </span>
-            ) : (
-              ""
-            )}
-          </NavLink>
-        </li>
-        {!login ? (
-          <li>
-            <NavLink to="login">Login</NavLink>
-          </li>
-        ) : (
-          <button className={styles.logout} onClick={handleLogout}>
-            Logout
-          </button>
-        )}
+    <div className="flex justify-between py-4 relative">
+      <h1 className="text-3xl pl-2 border-l-2 border-cyan-500">
+        Book Store 📖
+      </h1>
+      <ul className="hidden gap-3 md:flex">
+        {routes.map((route) => {
+          return <NavButton key={route.title} route={route} />;
+        })}
       </ul>
+      <div className="md:hidden text-3xl cursor-pointer">&#9776;</div>
     </div>
   );
 };

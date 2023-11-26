@@ -8,8 +8,10 @@ const Home = () => {
 
   return (
     <div>
-      <div className={styles.welcome}>
-        <h1>Welcome To BookStore 📚</h1>
+      <div className="h-52 flex justify-center items-center bg-slate-400 my-4">
+        <h1 className="text-2xl md:text-5xl text-cyan-100">
+          Welcome To BookStore 📚
+        </h1>
       </div>
       {loading && <>Loading...</>}
       {error && <>Error</>}

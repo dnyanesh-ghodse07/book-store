@@ -5,11 +5,11 @@ import styles from "./BookCard.module.css";
 const BookCard = ({ book }) => {
   return (
     <Link to={`/books/${book.id}`}>
-      <div className={styles.book}>
-        <div className={styles.bookCover}>
-          <img src={book.cover} alt="" />
+      <div className="bg-slate-50 overflow-hidden relative text-slate-500 rounded-md ">
+        <div className="h-full w-full">
+          <img className="h-full w-full object-cover" src={book.cover} alt="" />
         </div>
-        <div className={styles.bookDetails}>
+        <div className="p-4 absolute -bottom-20 hover:bottom-0 bg-slate-50 hover:transition-all transition ease-in-out delay-150">
           <h2 className={styles.bookTitle}>{book.title?.substring(0, 15)}</h2>
           <p className={styles.bookAuthor}>{book.author}</p>
           <p className={styles.desc}>
