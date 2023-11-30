@@ -1,18 +1,25 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import styles from "./Author.module.css";
 
 const Author = ({ book }) => {
   return (
-    <Link to={`/authors/${book.id}`}>
-      <div className={styles.author}>
-        <img src={book?.authorImg} alt="" />
-        <div>
-          <h2>{book?.author}</h2>
-          <p>{book?.authorDesc}</p>
+    <div className="p-2">
+      <Link to={`/authors/${book.id}`}>
+        <div className="">
+          <div className="">
+            <img
+              className="w-[200px] h-[200px] object-cover"
+              src={book?.authorImg}
+              alt=""
+            />
+          </div>
+          <div className="p-2">
+            <h2>{book?.author}</h2>
+            <p className="">{book?.authorDesc}</p>
+          </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

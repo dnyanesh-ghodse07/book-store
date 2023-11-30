@@ -1,4 +1,3 @@
-import styles from "./Cart.module.css";
 import { useCart } from "../../store/CartContext";
 import CartItem from "../../components/CartItem/CartItem";
 
@@ -9,26 +8,26 @@ const Cart = () => {
   }, 0);
 
   if (cartState.cart.length === 0) {
-    return <h1 style={{ textAlign: "center" }}>Your cart is empty!</h1>;
+    return <h1 className="">Your cart is empty!</h1>;
   }
   return (
-    <div className={styles.cart}>
+    <div className="">
       <h1>Your Cart</h1>
-      <div className={styles.cartContainer}>
-        <div className={styles.cartList}>
+      <div className="">
+        <div className="">
           <h3>Cart Items</h3>
-          <div className={styles.cartItems}>
+          <div className="">
             {cartState.cart?.map((item) => {
               return <CartItem key={item.id} item={item} />;
             })}
           </div>
         </div>
-        <div className={styles.summary}>
+        <div className="">
           <h3>Cart Summary</h3>
           <hr />
           {cartState.cart?.map((item) => {
             return (
-              <div key={item.id} className={styles.summaryItem}>
+              <div key={item.id} className="">
                 <span style={{ color: "#999" }}>{item.title}</span>{" "}
                 <span>$ {item.price * item.quantity}</span>
               </div>

@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import styles from "./Login.module.css";
 import { BooksContext } from "../../store/bookContext";
 import { useNavigate } from "react-router-dom";
 
@@ -22,8 +21,8 @@ const Login = () => {
   };
 
   return (
-    <div className={styles.loginContainer}>
-      <div className={styles.login}>
+    <div className="">
+      <div className="">
         <h2>Login</h2>
         <input
           type="text"

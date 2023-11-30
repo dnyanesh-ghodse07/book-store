@@ -1,4 +1,5 @@
 import NavButton from "../NavButton/NavButton";
+
 const Navbar = () => {
   const routes = [
     {
@@ -24,16 +25,15 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between py-4 relative">
-      <h1 className="text-3xl pl-2 border-l-2 border-cyan-500">
-        Book Store 📖
-      </h1>
-      <ul className="hidden gap-3 md:flex">
+    <div className="flex justify-between p-4">
+      <h1 className="">Book Store 📖</h1>
+      <ul className="sm:flex gap-4 hidden">
         {routes.map((route) => {
           return <NavButton key={route.title} route={route} />;
         })}
       </ul>
-      <div className="md:hidden text-3xl cursor-pointer">&#9776;</div>
+      <div className="sm:hidden text-xl">&#9776;</div>
+      {/* <Drawer /> */}
     </div>
   );
 };

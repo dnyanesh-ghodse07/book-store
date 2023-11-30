@@ -1,4 +1,3 @@
-import styles from "./Authors.module.css";
 import { useContext } from "react";
 import { BooksContext } from "../../store/bookContext";
 import Author from "../../components/Author/Author";
@@ -8,7 +7,7 @@ const Authors = () => {
   return (
     <>
       <h1>Authors</h1>
-      <div className={styles.authorList}>
+      <div className="">
         {books.map((book) => (
           <Author key={book.id} book={book} />
         ))}

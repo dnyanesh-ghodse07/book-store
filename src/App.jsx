@@ -14,7 +14,7 @@ import { BooksContext } from "./store/bookContext";
 function App() {
   const { login } = useContext(BooksContext);
   return (
-    <div className="app bg-slate-600 text-slate-200">
+    <div className="w-screen h-screen bg-slate-200 overflow-y-auto">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
